@@ -1,4 +1,4 @@
-# Node / Frontend
+# Node / Dependencies
 node_modules/
 frontend/node_modules/
 dist/
@@ -34,9 +34,13 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+backend/__pycache__/
+backend/app/__pycache__/
+backend/tests/__pycache__/
 
 # Testing & Linting
 .pytest_cache/
+backend/.pytest_cache/
 .coverage
 htmlcov/
 .ruff_cache/
