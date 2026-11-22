@@ -1,0 +1,24 @@
+{
+  "name": "vecna-pulse-workspace",
+  "version": "3.0.0",
+  "private": true,
+  "description": "VECNA-Pulse Real-Time Speech Emotion Recognition (SER) & Cybercrime Call Triage Workstation",
+  "scripts": {
+    "start": "powershell -ExecutionPolicy Bypass -File ./run.ps1",
+    "dev": "npm run dev --prefix frontend",
+    "build": "npm run build --prefix frontend",
+    "test": "npm test --prefix frontend && python backend/test_smoke.py",
+    "test:frontend": "npm test --prefix frontend",
+    "test:backend": "python backend/test_smoke.py"
+  },
+  "keywords": [
+    "speech-emotion-recognition",
+    "cybercrime-triage",
+    "audio-forensics",
+    "fastapi",
+    "react",
+    "vite"
+  ],
+  "author": "Abhishek Sharma & Team VoidRiders",
+  "license": "MIT"
+}
