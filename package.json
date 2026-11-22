@@ -7,9 +7,9 @@
     "start": "powershell -ExecutionPolicy Bypass -File ./run.ps1",
     "dev": "npm run dev --prefix frontend",
     "build": "npm run build --prefix frontend",
-    "test": "npm test --prefix frontend && python backend/test_smoke.py",
+    "test": "npm test --prefix frontend && python -m pytest backend/tests",
     "test:frontend": "npm test --prefix frontend",
-    "test:backend": "python backend/test_smoke.py"
+    "test:backend": "python -m pytest backend/tests"
   },
   "keywords": [
     "speech-emotion-recognition",
