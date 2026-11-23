@@ -203,37 +203,6 @@ cd backend
 python -m pytest tests
 ```
 
-## Project Structure
-
-```text
-VECNA-Pulse/
-├── backend/
-│   ├── app/
-│   │   ├── main.py           # FastAPI REST and WebSocket routes
-│   │   ├── emotion_engine.py # Audio DSP and biomarker analysis
-│   │   ├── triage_agent.py   # PII masking, threat scoring, provider calls
-│   │   └── mock_generator.py # Demo call payloads and sample data
-│   ├── samples/              # Test WAV files
-│   ├── tests/                # Backend integration smoke test
-│   ├── pyproject.toml        # Python dependencies and build settings
-│   └── uv.lock               # Locked Python dependency versions
-├── frontend/
-│   ├── public/               # Static public assets
-│   ├── src/
-│   │   ├── components/       # Dashboard and modal React components
-│   │   ├── services/         # Audio, API, hardware, cloud, and storage logic
-│   │   ├── App.jsx           # Main application state and workflows
-│   │   └── mockData.js       # Demo call data
-│   ├── tests/                # Frontend Node test scripts
-│   ├── vite.config.js        # Vite and development proxy configuration
-│   └── package.json          # Frontend dependencies and scripts
-├── docs/
-│   └── superpowers/          # Design specifications and implementation plans
-├── API_CONTRACT.md           # REST and WebSocket API contract
-├── run.ps1                   # Windows PowerShell launcher
-├── start.bat                 # Windows CMD launcher
-└── package.json              # Root-level test and build scripts
-```
 
 ## How It Works
 
